@@ -1,0 +1,95 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-header {
+    background-color: #d4af37;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.admin-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.form-section,
+.list-section {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 320px;
+}
+
+h2 {
+    color: #d4af37;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea,
+select,
+button {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.save-btn {
+    background-color: #d4af37;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.save-btn:hover {
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border-bottom: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+button.action {
+    background-color: #d4af37;
+    color: #000;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin: 0 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.action.delete {
+    background-color: #ff4d4d;
+    color: #fff;
+}

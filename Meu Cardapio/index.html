@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gourmet Delícia - Cardápio Premium</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="https://img.icons8.com/emoji/48/hamburger-emoji.png" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Gourmet<span>Delícia</span></div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#" data-category="destaques" class="active">Destaques</a></li>
+                <li><a href="#" data-category="hamburgueres">Hambúrgueres</a></li>
+                <li><a href="#" data-category="salgados">Salgados</a></li>
+                <li><a href="#" data-category="bebidas">Bebidas</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Buscar no cardápio..." />
+            <ul id="suggestions" class="hidden"></ul>
+        </div>
+        <div class="cart-icon" id="open-cart">🛒<span id="cart-count">0</span></div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>🍔 O Verdadeiro Sabor Gourmet</h1>
+                <p>Seleção premium feita para quem valoriza o sabor e a experiência.</p>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <div id="menu-items" class="menu-grid"></div>
+        </section>
+    </main>
+
+    <!-- Overlay do carrinho -->
+    <div id="cart-overlay"></div>
+
+    <!-- Modal do carrinho -->
+    <aside id="cart-modal">
+        <div class="cart-header">
+            <h2>🛍️ Seu Carrinho</h2>
+            <button id="close-cart">✖</button>
+        </div>
+        <div id="cart-items"></div>
+        <div class="cart-footer">
+            <p><strong>Total:</strong> <span id="cart-total">R$ 0,00</span></p>
+            <input type="text" id="client-name" placeholder="Seu nome"
+                style="width:100%;padding:8px;margin:8px 0;border-radius:6px;border:none;">
+            <button id="checkout-btn">
+                <span class="checkout-icon">🛍️</span>
+                <span class="checkout-text">Finalizar Pedido</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
